@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--Link To cdnjs font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <title>موقع شركة البصريات</title>
+     <!--Link To CSS-->
+    <link rel="stylesheet" href="style2.css">
+     <!--Link To js-->
+    <script src="script.js" defer></script>
+    <title>LOGIN</title>
+    <style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			padding: 40px;
+			max-width: 400px;
+			margin: 100px auto;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 0;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+            align-items: center;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+    <header class="header">
+        <a><img src="img\photo1687981607.jpeg" alt="نظارة 1" class="logo" ></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homw2.html">الرئيسية</a></li>
+                    <li><a href="#">النظارات+</a>
+                        <ul>
+                            <li><a href="#">نظارات شمسية رجالي</a></li>
+                            <li><a href="#">نظارات شمسية للنساء </a></li>
+                         </ul>
+                    </li>
+                    <li><a href="#">الخدمات</a></li>
+                    <li><a href="#" class="active">+ الحساب</a>
+                        <ul>
+                            <li><a href="login.html">تسجيل الدخول </a></li>
+                            <li><a href="signUp.html"> حساب جديد </a></li>
+                         </ul>
+                    </li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+            <form action="" class="search-form">
+                <input type="search" placeholder="ما الذي تبحث عنه؟" id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    </header>
+    <form action="POST">
+		<h1>مرحبا بعودتك</h1>
+		<label for="username"placeholder="البريد الالكتروني">البريد الالكتروني</label>
+		<input type="email" id="username" name="username" required>
+		<label for="password">كلمة المرور</label>
+		<input type="password" id="password" name="password" minlength="8" required>
+		<input type="submit" value="تسجيل الدخول">
+	</form>
+    <section class="footer">
+        <div class="box-containar">
+            <div class="box">
+                <h3>أفضل الفئات</h3>
+                 <a href="#">نظارات شمسية رجالي<i class="fas fa-angle-left"></i></a>
+                 <a href="#">نظارات شمسية للنساء<i class="fas fa-angle-left"></i></a>
+                 <a href="#">نظارات طبي<i class="fas fa-angle-left"></i></a>
+            </div>
+    
+            <div class="box">
+                <h3>خدمة العملاء</h3>
+                 <a href="#">الأسئلة الأكثر شيوعا<i class="fas fa-angle-left"></i></a>
+                 <a href="#">تتبع طلبك<i class="fas fa-angle-left"></i></a>
+                 <a href="#">حسابي الشخصي<i class="fas fa-angle-left"></i></a>
+                 <a href="#">الشحن والتوصيل<i class="fas fa-angle-left"></i></a>
+                 <a href="#">وسائل الدفع<i class="fas fa-angle-left"></i></a>
+                 <a href="#">الاستبال والارجاع<i class="fas fa-angle-left"></i></a>
+            </div>
+    
+            <div class="box">
+                <h3>تابعونا</h3>
+                 <a href="#">انستقرام<i class="fab fa-instagram"></i></a>
+                 <a href="#">تويتر<i class="fab fa-twitter"></i></a>
+                 <a href="#">فيسبوك<i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+</html>
